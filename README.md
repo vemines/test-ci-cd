@@ -1,21 +1,22 @@
-# express-mvc-framework
-nodejs + express + mongodb to do MVC example
+npm i
+npm run dev
 
-Youtube: [API Structure Your Nodejs REST API for beginner to Advanced](https://youtu.be/i4Pr81apfnU)
+http://localhost:3000/checkstatus
 
-Blog: [backend nodejs](https://anonystick.com)
+Run all Github action commands in (Settings -> Actions -> Runner) on EC2
+-- run below instead ./run.sh
 
-# How to use
+sudo ./svc.sh install
+sudo ./svc.sh start
 
-### clone git
+https://github.com/nodesource/distributions
 
-```
-> git clone https://github.com/anonystick/structure-api-mvc-express-nodejs.git your-project
-> cd your-project
-> npm i
-> npm run dev
-```
+lsb_release -a      // check is support nodejs version
 
-# Try
+sudo npm install pm2 -g
 
-[localhost](http://localhost:3051)
+pm2 start server.js --name=test-cicd    // use name in file 
+
+// in local
+git pull
+edit file .github\workflows\node.js.yml
