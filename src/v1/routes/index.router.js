@@ -14,17 +14,14 @@ router.get('/api/users', (req, res, next) => {
         message: 'api ok',
         metadata: [
             {
-                name: 'anonystick',
-                age: 40
+                name: 'vemines',
+                age: 25
             },
             {
-                name: 'Ronaldo',
-                age: 39
-            },
-            {
-                name: 'Messi',
-                age: 37
+                name: 'vemines 1999',
+                age: 26
             }
+
         ]
     })
 })
